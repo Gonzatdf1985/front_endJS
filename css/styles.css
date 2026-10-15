@@ -1,0 +1,87 @@
+:root {
+  --color-acent-secundary: #086262;
+  --color-bg: #ecf4e6;
+  --color-foot-head: #5ba7a7;
+  --accent-color: #c9ca8b;
+  --font-heading: quicksand;
+  --font-text: poppins;
+  --color-text: #333333;
+
+
+
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: quicksand;
+  src: url(../fonts/Quicksand.ttf);
+}
+
+@font-face {
+  font-family: poppins;
+  src: url(../fonts/Poppins-Regular.ttf);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+h1 {
+  font-family: var(--font-heading);
+}
+
+body {
+  font-family: var(--font-text);
+  background-color: var(--color-acent-secundary);
+}
+
+.navbar {
+  display: flex;
+  list-style-type: none;
+  margin-top: 0;
+  padding-left: 0;
+  justify-content: end;
+  column-gap: 10px;
+  align-items: center;
+  ;
+}
+
+.navbar__item {
+  text-transform: uppercase;
+}
+
+.navbar__link {
+  text-decoration: none;
+}
+
+.contenedor {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card-container {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 250px;
+  border: 1px solid orange;
+  padding: 5px;
+}
+
+
+.svg-img {
+  fill: white;
+  width: 2.8rem;
+}
